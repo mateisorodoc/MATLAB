@@ -1,0 +1,10 @@
+function i = current(t, v, r, l)
+
+k = 0;
+
+for j=0:0.0001:t
+    k = k + 1;
+    i(k) = ( v/r ) * ( 1 - exp(( -r*t) / l) );
+end
+
+plot(i)
